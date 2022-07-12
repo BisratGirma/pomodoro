@@ -1,0 +1,99 @@
+body {
+  background-color: darkseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 90vh;
+  margin-top: 10px;
+}
+.break, .session {
+  flex: 0 0 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.display {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 65%;
+}
+.session-label, .break-label, .break-number, .session-number {
+  flex: 0 0 100%;
+}
+#session-label, #break-label, #session-length, #break-length {
+  font-family: cursive;
+  font-size: large;
+  color: floralwhite;
+}
+.break-number, .session-number {
+  display: flex;
+  justify-content: center;
+}
+.decrement, .increment {
+  width: 25px;
+  height: 20px;
+  font-size: large;
+  background-color: azure;
+  color: darkblue;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+}
+#reset, #start_stop {
+  width: 50px;
+  height: 24px;
+  background-color: rgba(240, 248, 255, 0.589);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+}
+#timer-label, .time {
+  flex: 0 0 75%;
+  display: flex;
+  justify-content: center;
+}
+#timer-label {
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.time {
+  align-items: center;
+  height: 300px;
+  border: 2px solid #fed5;
+  border-radius: 50%;
+  padding: 0px;
+}
+#time-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  /* -webkit-mask: radial-gradient(farthest-side, rgba(143, 188, 143, 0.123) calc(99% - 5px), #000 calc(100% - 15px));
+          mask: radial-gradient(farthest-side, rgba(143, 188, 143, 0.541) calc(99% - 5px), #000 calc(100% - 15px)); */
+}
+#time-left p {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 500%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+}
